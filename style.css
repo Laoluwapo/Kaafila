@@ -94,6 +94,10 @@ nav button:hover {
     border-radius: 1rem;
 }
 
+.nisha-text-2 {
+    display: none;
+}
+
 .nisha {
     background-image: url(img/nft7.png);
     grid-column: 1 / 2;
@@ -138,7 +142,6 @@ nav button:hover {
 
 .section-1 {
     width: 95vw;
-    margin: 0 auto;
     margin: 3.7rem auto;
 }
 
@@ -220,7 +223,7 @@ nav button:hover {
 }
 
 .banana div {
-    margin-right: 30rem;
+    margin-right: auto;
 }
 
 .best-collections {
@@ -500,8 +503,92 @@ footer {
     color: purple;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
+    nav {
+        margin-bottom: 2rem;
+    }
     nav div {
+        display: none;
+    }
+    .header-images {
+        display: block;
+    }
+    .nisha {
+        height: 60vh;
+    }
+    .spunky, .shredded, .super, .red, .standard, .pixel, .nisha-text-1 {
+        display: none;
+    }
+    .nisha-text-2 {
+        display: block;
+        position: relative;
+        top: 10%;
+        left: 5%;
+        font-size: 6rem;
+    }
+    .header-images p {
+        margin: 0;
+        font-size: 4rem;
+    }
+    .trending-coins {
+        flex-direction: column;
+    }
+    .trending-coins div {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    .trending-coins div:nth-child(2) {
+        top: 0;
+    }
+    .trending-paragraph {
+        margin-bottom: 4.2rem;
+    }
+    .trending h2 {
+        margin-top: 4rem;
+    }
+    .other-coins {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .banana {
+      width: 80vw;
+      padding: 2rem;
+      gap: 2rem;
+    }
+    .banana img {
+        margin: 0;
+    }
+    .grid--2x3 {
+        grid-template-columns: 100%;
+    }
+    .card {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    .bids-flex {
+        display: grid;
+    }
+    .contact-section {
+        display: block;
+        justify-content: center;
+        gap: 25rem;
+        margin: 0;
+    }
+    .community {
+        margin-bottom: 1rem;
+    }
+    .download-icon {
+        width: 75vw;
+    }
+    .copyright {
+        max-width: 70vw;
+    }
+    .copyright-main {
+        margin-right: auto;
+    }
+    .empty {
         display: none;
     }
 }
