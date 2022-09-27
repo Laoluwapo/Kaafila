@@ -503,6 +503,57 @@ footer {
     color: purple;
 }
 
+@media screen and (max-width: 768px) {
+    nav {
+        margin-bottom: 2rem;
+    }
+    nav div {
+        display: none;
+    }
+    .header-images {
+        grid-template-columns: 35% 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .super {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .pixel {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+    .trending-coins img {
+        width: 8rem;
+        height: 8rem;
+        margin: 0;
+    }
+    .trending-coins div {
+        padding: 2rem;
+    }
+    .banana {
+        padding: 1rem;
+    }
+    .banana img, .percentage-other {
+        margin: 0 1rem 0 0;
+    }
+    .banana div {
+        margin-right: auto;
+    }
+    .grid--2x3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bids-flex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contact-section {
+        gap: 10rem;
+    }
+    .socials {
+       display: flex;
+    }
+}
+
 @media screen and (max-width: 576px) {
     nav {
         margin-bottom: 2rem;
@@ -563,11 +614,8 @@ footer {
     .grid--2x3 {
         grid-template-columns: 100%;
     }
-    .card {
-        max-width: 50rem;
-        margin: 0 auto;
-    }
     .bids-flex {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
