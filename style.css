@@ -626,6 +626,9 @@ footer {
     .community {
         margin-bottom: 1rem;
     }
+    .nft-name {
+        top: 55%;
+    }    
     .download-icon {
         width: 75vw;
     }
