@@ -640,4 +640,7 @@ footer {
     .empty {
         display: none;
     }
+    .attribution {
+        font-size: 1.4rem;
+    }
 }
